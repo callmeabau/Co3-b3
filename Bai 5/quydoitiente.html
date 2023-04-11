@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<table>
+    <tr>
+        <th>Amount</th>
+        <th style="text-align: right">From Currency</th>
+        <th style="text-align: right">To Currency</th>
+        <br>
+    </tr>
+</table>
+<input type="text" id="dauvao">
+<select id="a">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<select id="b">
+    <option value="VND">VND</option>
+    <option value="USD">USD</option>
+</select>
+<button onclick="tinh()">Convert</button>
+<h1 id="rs" ></h1>
+</body>
+<script>
+    function tinh() {
+        let sl1 = document.getElementById('a').value
+        let sl2 = document.getElementById('b').value
+        let c = document.getElementById('dauvao').value
+      if (sl1==sl2){
+          alert(c)
+      }
+      if (sl1=='VND'&&sl2=='USD'){
+          alert(c/23488)
+      }
+      if (sl1=='USD'&&sl2=='VND'){
+          alert(c*23488)
+      }
+    }
+
+</script>
+</html>
