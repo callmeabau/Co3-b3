@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+</body>
+<script>
+  let n = 20
+  let a = 0
+  let b = 1
+  let c = a +  b
+  // let tong =  0
+  for (let i = 0; i < n; i++) {
+      c = a + b;
+      a = b;
+      b = c;
+      // tong += c
+      if(c % 5 === 0){
+        document.write(c + "<br>")
+        break;
+      }
+
+  }
+  document.write('Tong 20 so Fibonacci la : ' + tong)
+
+</script>
+</html>

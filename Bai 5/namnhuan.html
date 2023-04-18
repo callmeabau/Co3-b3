@@ -6,29 +6,16 @@
 </head>
 <body>
     <script>
-        let year =parseInt(prompt("nhap nam vao day"));
-        let lanamnhuan = false;
-
-        if(year % 4 == 0)
-        {
-            if (year % 100 == 0)
-            {
-                if (year % 400 == 0)
-                {
-                    lanamnhuan=true
-                }
-            } else
-            {
-                lanamnhuan=true
-            }
-        }
-        if (lanamnhuan){
-            alert(year + "lanamnhuan");
+        let value = prompt('ten goi khac cua thanh');
+        if (value ==('bau')){
+            alert('chuan')
         } else {
-            alert(year + "Khonglanamnhuan")
+            alert('kqua la bau')
         }
+
 
     </script>
+
 
 
 </body>

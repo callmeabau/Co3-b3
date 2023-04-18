@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img src="https://ktmt.vnmediacdn.com/images/2021/11/19/30-1637293027-anh11.jpg" id="a" style="left: 300px; position: relative; width: 100px">
+
+</body>
+<script>
+  setInterval(() => {
+    document.getElementById('a').style.left = parseInt(document.getElementById('a').style.left) + 10 + 'px'
+    if (document.getElementById('a').style.left >= window.innerWidth+'px') {
+        document.getElementById(a).style.left ="0px"
+    }
+    }, 300)
+//   di quanh man hinh
+</script>
+</html>

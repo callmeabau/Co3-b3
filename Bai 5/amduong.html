@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--  <h1>JavaScript Loops</h1>-->
+<!--  <p id="d">the number is</p>-->
+<img src="https://ktmt.vnmediacdn.com/images/2021/11/19/30-1637293027-anh11.jpg" id="a" style="left: 300px; position: relative; width: 100px; top: 0px">
+
+</body>
+<script>
+    // let text =''
+    // let i;
+    // for (i = 0; i < 5 ;  i++ ) {
+      // text += "the number is" + i + "<br>"
+    // }
+    // document.getElementById('d').innerHTML = text
+
+   // let so = prompt('nhap vao day');
+   // let tong = 0
+   // let i = 0
+   //  for ( ;i <= so ; i += 1){
+   //    tong = tong + i
+   //  }
+   //  alert(tong)
+
+    // let i = 1
+    //   while ( i < 100);{
+    //     document.write( ="+ i +" "%>");
+    //     i++;
+    // }
+
+    window.addEventListener('keydown', (e) => {
+      if (e.key === 'd') {
+        document.getElementById('a').style.left = parseInt(document.getElementById('a').style.left) + 10 + 'px'
+      } if (e.key === 'a') {
+        document.getElementById('a').style.left = parseInt(document.getElementById('a').style.left) - 10 + 'px'
+      } if (e.key === 'w') {
+        document.getElementById('a').style.top = parseInt(document.getElementById('a').style.top) - 10 + 'px'
+      } if (e.key === 's') {
+        document.getElementById('a').style.top = parseInt(document.getElementById('a').style.top) + 10 + 'px'
+      }
+    })
+
+</script>
+</html>
