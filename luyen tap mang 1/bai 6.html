@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+    let arr = [1, 2, 11, 34, 54, 76, 3, 6, 8, 99]
+    let v =  +prompt("")
+    let test = false
+    for (let i = 0; i < arr.length; i++) {
+        if (v === arr[i]) {
+            test = true
+        }
+    }
+    if (test === true)
+        document.write( v+" is in the array" )
+    else {
+        document.write(v+" is not in the array" )
+    }
+</script>
+</html>
