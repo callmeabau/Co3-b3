@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="login">
+<h1></h1>
+<input type="text" id="usn" placeholder="login">
+<br>
+<input type="password" id="pass" placeholder="Password">
+    <br>
+<button>  Đăng Nhập </button>
+    <link rel="stylesheet" href="quanlysp.css">
+</div>
+</body>
+<script>
+    function login() {
+        let usn = document.getElementById('usn').value
+        let pass = document.getElementById('pass').value
+        if (usn = 'admin' && pass == '1') {
+            window.location = 'index.html'
+        } else {
+            alert(' Sai TK MK')
+        }
+    }
+</script>
+</html>

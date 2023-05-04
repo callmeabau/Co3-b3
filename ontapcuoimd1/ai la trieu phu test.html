@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="show"></div>
+</body>
+<script>
+    let listQuiz = [
+        {
+            content: 'alo',
+            A: '2',
+            B: '3',
+            C: '4',
+            D: '5',
+            trueAnswer: '3'
+        },
+        {
+            content: 'loo',
+            A: 'hi',
+            B: 'ha',
+            C: 'hu',
+            D: 'ht',
+            trueAnswer: 'hi'
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+        {
+            content: '',
+            A: '',
+            B: '',
+            C: '',
+            D: '',
+            trueAnswer: ''
+        },
+    ]
+
+    let dem = 0
+
+    function test() {
+        let str = `
+    <h1>${listQuiz[0].content}</h1>
+    <button onclick="check(${listQuiz[0].trueAnswer},${listQuiz[0].A} )">${listQuiz[0].A}</button>
+    <button onclick="check(${listQuiz[0].trueAnswer},${listQuiz[0].B} )">${listQuiz[0].B}</button>
+    <button onclick="check(${listQuiz[0].trueAnswer},${listQuiz[0].C} )">${listQuiz[0].C}</button>
+    <button onclick="check(${listQuiz[0].trueAnswer},${listQuiz[0].D} )">${listQuiz[0].D}</button>
+    `;
+        document.getElementById('show').innerHTML = str
+    }
+
+    function check(trueAnswer, answer) {
+        test()
+        if (trueAnswer == answer) {
+            alert("chuan con me no roi")
+            dem++
+        }
+    }
+
+</script>
+</html>

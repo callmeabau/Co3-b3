@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+</body>
+<script>
+   let arr = [1,2,3,4];
+    let sum = 0;
+   function soNguyen (x, z) {
+       for (let i = 0; i < arr.length; i++) {
+           if (z === i) {
+               arr.splice(z , 1, 6)
+               return arr
+           }
+       }
+   }
+   alert(soNguyen (arr, 1))
+</script>
+</html>

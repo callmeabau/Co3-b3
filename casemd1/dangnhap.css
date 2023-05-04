@@ -1,0 +1,27 @@
+body {
+    background-image: url(https://cdn.wallpapersafari.com/49/39/XvYsh1.jpg);
+    background-size: cover;
+}
+
+.login {
+    width: 300px;
+    height: 200px;
+    background-color: white;
+    border: 1px solid;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 250px;
+    margin-left: 550px;
+    background: black;
+}
+.login h1 {
+    color: white;
+}
+.login input {
+    width: 200px;
+    height: 40px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-left: 20px;
+
+}

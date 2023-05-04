@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="login">
+    <h1></h1>
+    <input type="text" id="usn" placeholder="login">
+    <br>
+    <input type="password" id="pass" placeholder="Password">
+    <br>
+    <button onclick="login()"> Đăng Nhập </button>
+    <link rel="stylesheet" href="dangnhap.css">
+
+</div>
+</body>
+<script>
+    function login() {
+        let usnn = document.getElementById('usn').value
+        let pass = document.getElementById('pass').value
+        if (usnn == 'admin' && pass == '1') {
+            window.location = 'webspham.html'
+        } else {
+            alert(' Sai TK MK')
+        }
+    }
+</script>
+</html>

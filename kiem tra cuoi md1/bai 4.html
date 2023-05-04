@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="cv" width="800" height="300" style="border: 5px"></canvas>
+</body>
+<script>
+    class Rec {
+        constructor(x, y, w, h, c) {
+            this.x = x;
+            this.y = y;
+            this.wight = w;
+            this.hight = h;
+            this.color = c;
+        }
+
+        draw() {
+            let cv = document.getElementById('cv').getContext('2d');
+            cv.style = this.color;
+            cv.fillRect(this.x, this.y, this.wight, this.hight);
+            // cv.arc(95,50,40,0,2*Math.PI);
+
+        }
+    }
+
+
+    class Circle {
+        constructor(x, y, r, c) {
+            this.x = x;
+            this.y = y;
+            this.radius = r
+            this.color = c;
+        }
+
+        draw2() {
+            let ctx = document.getElementById('cv').getContext('2d');
+            ctx.fillStyle = 'white'
+            ctx.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+            ctx.fill();
+        }
+    }
+
+
+    let hcn = new Rec(10, 10, 300, 100, 'red')
+    hcn.draw()
+    let tron = new Circle(95, 50, 40, 0, 2 * Math.PI)
+    tron.draw2()
+
+</script>
+</html>

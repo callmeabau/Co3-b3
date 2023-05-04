@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="display">
+    <button onclick="loginForm()">Login</button>
+    <button onclick="registerForm()">Register</button>
+</div>
+</body>
+<script>
+    function loginForm() {
+        document.getElementById('display').innerHTML = `
+    <input type="text" id="usn">
+    <input type="text" id="pass">
+    <button>Login</button>
+    `
+    }
+
+    function registerForm() {
+        document.getElementById('display').innerHTML = `
+    <input type="text" id="usn">
+    <input type="text" id="pass">
+    <button onclick="register()">Register</button>
+    `
+    }
+    function register () {
+        let usn = document.getElementById('usn').value
+        let pass = document.getElementById('pass').value
+        listUser.push({
+            usename : use
+        })
+    }
+</script>
+</html>
